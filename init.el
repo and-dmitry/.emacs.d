@@ -1,3 +1,8 @@
+;; Disable mouse interface. Doing it early to avoid redrawing later.
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+
 ;;; repos and packages
 ;;; FIXME: fails to install packages
 (when (>= emacs-major-version 24)
@@ -148,10 +153,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(history-length 1000)
- '(menu-bar-mode nil)
- '(scroll-bar-mode nil)
  '(show-trailing-whitespace t)
- '(tool-bar-mode nil)
  '(x-select-enable-clipboard t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
