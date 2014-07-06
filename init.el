@@ -3,6 +3,8 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
+(setq inhibit-startup-screen t)
+
 ;;; repos and packages
 ;;; FIXME: fails to install packages
 (when (>= emacs-major-version 24)
