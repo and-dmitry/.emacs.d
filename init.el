@@ -29,6 +29,10 @@
 ;;; show column number
 (column-number-mode 1)
 
+;;; highlight trailing whitespace in some modes
+(add-hook 'python-mode-hook (lambda () (setq show-trailing-whitespace t)))
+(add-hook 'emacs-lisp-mode-hook (lambda () (setq show-trailing-whitespace t)))
+
 ;;; buffer names
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
@@ -155,7 +159,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(history-length 1000)
- '(show-trailing-whitespace t)
  '(x-select-enable-clipboard t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
