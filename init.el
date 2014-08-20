@@ -13,7 +13,7 @@
 
 ;; separate file for Custom
 ;; TODO: use user-emacs-directory?
-(setq custom-file "~/.emacs.d/custom.el")
+(setq custom-file "~/.emacs.d/elisp/custom.el")
 (load custom-file)
 
 
