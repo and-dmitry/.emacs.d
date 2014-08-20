@@ -8,13 +8,14 @@
 ;; russian input
 (setq default-input-method "russian-computer")
 
-;; load path for my personal code
-(add-to-list 'load-path "~/.emacs.d/elisp/")
 
-;; separate file for Custom
-;; TODO: use user-emacs-directory?
-(setq custom-file "~/.emacs.d/elisp/custom.el")
-(load custom-file)
+(let ((personal-dir (concat user-emacs-directory "elisp/")))
+  ;; load path for my personal code
+  (add-to-list 'load-path personal-dir)
+  ;; separate file for Custom
+  (setq custom-file (concat personal-dir "custom.el"))
+  (load custom-file)
+)
 
 
 ;;; repos and packages
