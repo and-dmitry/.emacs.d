@@ -13,7 +13,7 @@
   (add-to-list 'load-path personal-dir)
   ;; separate file for Custom
   (setq custom-file (concat personal-dir "custom.el"))
-  (load custom-file)
+  (load-file custom-file)
 )
 
 
