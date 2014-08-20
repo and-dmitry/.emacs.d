@@ -8,8 +8,7 @@
 ;; russian input
 (setq default-input-method "russian-computer")
 
-
-(let ((personal-dir (concat user-emacs-directory "elisp/")))
+(let ((personal-dir (locate-user-emacs-file "elisp/")))
   ;; load path for my personal code
   (add-to-list 'load-path personal-dir)
   ;; separate file for Custom
