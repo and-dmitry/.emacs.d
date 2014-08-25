@@ -17,21 +17,36 @@
 )
 
 
-;;; repos and packages
-;;; FIXME: fails to install packages
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-  (package-initialize)
-  ;; check if the packages is installed; if not, install it.
+;;; packages
+
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; initialize packages to be able to install and configure them
+(setq package-enable-at-startup nil)
+(package-initialize)
+;; get list of packages
+(unless package-archive-contents
+  (package-refresh-contents))
+;; install missing
+(let ((packages
+       '(ack-and-a-half
+	 ag
+	 expand-region
+	 grep-a-lot
+	 magit
+	 nose
+	 projectile
+	 smartscan
+	 smex
+	 yaml-mode)))
   (mapc
    (lambda (package)
-     (or (package-installed-p package)
-	 (if (y-or-n-p (format "Package %s is missing. Install it? " package))
-	     (package-install package))))
-   '(magit projectile ack-and-a-half ag grep-a-lot nose yaml-mode smex expand-region smartscan))
-  )
-
+     (unless (package-installed-p package)
+       (if (y-or-n-p (format "Package %s is missing. Install it?" package))
+	   (package-install package))))
+   packages)
+)
 
 (load "init-defaults")
 (load "init-modes")
