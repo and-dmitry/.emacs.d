@@ -30,6 +30,9 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+;; ruby on rails
+(add-to-list 'auto-mode-alist '("\\.jbuilder$" . ruby-mode))
+
 ;; ag
 (setq ag-highlight-search t)
 
