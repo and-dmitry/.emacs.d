@@ -30,8 +30,16 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
-;; ruby on rails
+
+;;; ruby
+
+;; smartscan
+(add-hook 'ruby-mode-hook 'smartscan-mode)
+
+;; ruby on rails files
 (add-to-list 'auto-mode-alist '("\\.jbuilder$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
+
 
 ;; ag
 (setq ag-highlight-search t)
