@@ -41,6 +41,41 @@
 (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 
 
+;;; generic mode for 1C sources
+
+(require 'generic-x)
+
+(define-generic-mode
+    '1c-mode  ;; mode name
+  '("//")  ;; comments
+
+  '("if" "если" "then" "тогда" "elsif" "иначеесли" "else" "иначе" "endif"
+    "конецесли" "do" "цикл" "for" "для" "to" "по" "each" "каждого" "in" "из"
+    "while" "пока" "enddo" "конеццикла" "procedure" "процедура" "endprocedure"
+    "конецпроцедуры" "function" "функция" "endfunction" "конецфункции" "var"
+    "перем" "export" "экспорт" "goto" "перейти" "and" "и" "or" "или" "not" "не"
+    "val" "знач" "break" "прервать" "continue" "продолжить" "return" "возврат"
+    "try" "попытка" "except" "исключение" "endtry" "конецпопытки" "raise"
+    "вызватьисключение" "false" "ложь" "true" "истина" "undefined"
+    "неопределено" "null" "new" "новый" "execute" "выполнить"
+
+    "If" "Если" "Then" "Тогда" "Elsif" "ИначеЕсли" "Else" "Иначе" "Endif"
+    "КонецЕсли" "Do" "Цикл" "For" "Для" "To" "По" "Each" "Каждого" "In" "Из"
+    "While" "Пока" "Enddo" "КонецЦикла" "Procedure" "Процедура" "Endprocedure"
+    "КонецПроцедуры" "Function" "Функция" "Endfunction" "КонецФункции" "Var"
+    "Перем" "Export" "Экспорт" "Goto" "Перейти" "And" "И" "Or" "Или"
+    "Not " "Не " "Val" "Знач" "Break" "Прервать" "Continue" "Продолжить"
+    "Return" "Возврат" "Try" "Попытка" "Except" "Исключение" "Endtry"
+    "КонецПопытки" "Raise" "ВызватьИсключение" "False" "Ложь" "True" "Истина"
+    "Undefined" "Неопределено" "Null" "New" "Новый" "Execute" "Выполнить")
+  '(("=" . 'font-lock-operator)
+    (";" . 'font-lock-builtin))
+  nil  ;; no extensions
+  nil
+  "Generic mode for 1C"
+  )
+
+
 ;; ag
 (setq ag-highlight-search t)
 
