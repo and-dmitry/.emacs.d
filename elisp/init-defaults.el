@@ -12,6 +12,9 @@
 ;; subword moving
 (global-subword-mode 1)
 
+;; use spaces for indentation
+(setq-default indent-tabs-mode nil)
+
 
 ;;; backups settings
 (setq
