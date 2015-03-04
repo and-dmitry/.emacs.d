@@ -15,6 +15,9 @@
 ;; use spaces for indentation
 (setq-default indent-tabs-mode nil)
 
+;; confirm exit
+(setq confirm-kill-emacs 'y-or-n-p)
+
 
 ;;; backups settings
 (setq
