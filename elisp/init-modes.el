@@ -115,3 +115,7 @@
 ;; grep-a-lot
 (require 'grep-a-lot)
 (grep-a-lot-setup-keys)
+
+;; log4j
+(add-to-list 'auto-mode-alist '("\\.log\\'" . log4j-mode))
+(add-to-list 'auto-mode-alist '("\\.out\\'" . log4j-mode))

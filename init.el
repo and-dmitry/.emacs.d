@@ -34,6 +34,7 @@
 	 ag
 	 expand-region
 	 grep-a-lot
+         log4j-mode
 	 magit
 	 nose
 	 projectile
