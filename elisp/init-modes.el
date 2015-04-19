@@ -13,13 +13,13 @@
 (add-hook 'python-mode-hook (lambda () (nose-mode t)))
 (setq nose-global-name "nosetests")
 (add-hook 'python-mode-hook
-	  '(lambda () (define-key python-mode-map "\C-ct" 'nosetests-again)))
+          '(lambda () (define-key python-mode-map "\C-ct" 'nosetests-again)))
 
 ;; scons files
 (setq auto-mode-alist
       (append
        '(("SConstruct" . python-mode)
-	 ("SConscript" . python-mode))
+         ("SConscript" . python-mode))
        auto-mode-alist))
 
 

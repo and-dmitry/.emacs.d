@@ -21,7 +21,7 @@
 
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;; initialize packages to be able to install and configure them
 (setq package-enable-at-startup nil)
 (package-initialize)
@@ -31,21 +31,21 @@
 ;; install missing
 (let ((packages
        '(ack-and-a-half
-	 ag
-	 expand-region
-	 grep-a-lot
+         ag
+         expand-region
+         grep-a-lot
          log4j-mode
-	 magit
-	 nose
-	 projectile
-	 smartscan
-	 smex
-	 yaml-mode)))
+         magit
+         nose
+         projectile
+         smartscan
+         smex
+         yaml-mode)))
   (mapc
    (lambda (package)
      (unless (package-installed-p package)
        (if (y-or-n-p (format "Package %s is missing. Install it?" package))
-	   (package-install package))))
+           (package-install package))))
    packages)
 )
 
