@@ -33,3 +33,9 @@
 ;; expand region
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+;; org-mode
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)

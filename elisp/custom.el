@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector ["black" "orange red" "spring green" "gold" "blue" "magenta" "deep sky blue" "white"])
  '(history-length 1000)
+ '(org-agenda-files (quote ("~/sync/org/gtd.org")))
  '(x-select-enable-clipboard t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

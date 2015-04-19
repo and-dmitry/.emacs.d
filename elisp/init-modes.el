@@ -119,3 +119,10 @@
 ;; log4j
 (add-to-list 'auto-mode-alist '("\\.log\\'" . log4j-mode))
 (add-to-list 'auto-mode-alist '("\\.out\\'" . log4j-mode))
+
+;;; org-mode
+
+;; throw error on edits that affect invisible part of buffer
+(setq org-catch-invisible-edits 'error)
+;; add timestamp when closing task
+(setq org-log-done 'time)
