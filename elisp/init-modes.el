@@ -117,6 +117,7 @@
 (grep-a-lot-setup-keys)
 
 ;; log4j
+;; TODO: case-fold-search is nil in this mode. why? I don't like it.
 (add-to-list 'auto-mode-alist '("\\.log\\'" . log4j-mode))
 (add-to-list 'auto-mode-alist '("\\.out\\'" . log4j-mode))
 
