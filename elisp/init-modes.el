@@ -123,10 +123,15 @@
 
 ;;; org-mode
 
+(setq org-modules '(org-habit))
 ;; throw error on edits that affect invisible part of buffer
 (setq org-catch-invisible-edits 'error)
 ;; add timestamp when closing task
 (setq org-log-done 'time)
+;; files
+(setq org-agenda-files '("~/sync/org/gtd.org" "~/sync/org/dates.org"))
+(setq org-refile-targets '(("~/sync/org/gtd.org" :level . 1)
+                           ("~/sync/org/someday.org" :level . 1)))
 ;; configure capturing
 (setq org-directory "~/sync/org")
 (setq org-default-notes-file "~/sync/org/log.org")
