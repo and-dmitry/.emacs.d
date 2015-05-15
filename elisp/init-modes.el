@@ -41,6 +41,12 @@
 (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 
 
+;;; java
+
+;; use minimal arguments identation to reduce line length
+(add-hook 'java-mode-hook (lambda () (c-set-offset 'arglist-intro '+)))
+
+
 ;;; generic mode for 1C sources
 
 (require 'generic-x)
