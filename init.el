@@ -34,6 +34,7 @@
          ag
          expand-region
          grep-a-lot
+         groovy-mode
          log4j-mode
          magit
          nose
