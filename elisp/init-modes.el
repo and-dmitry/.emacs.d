@@ -47,6 +47,12 @@
 (add-hook 'java-mode-hook (lambda () (c-set-offset 'arglist-intro '+)))
 
 
+;;; groovy
+
+;; 4 spaces indentation
+(add-hook 'groovy-mode-hook (lambda () (setq c-basic-offset 4)))
+
+
 ;;; generic mode for 1C sources
 
 (require 'generic-x)
