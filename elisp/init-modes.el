@@ -49,8 +49,9 @@
 
 ;;; groovy
 
-;; 4 spaces indentation
-(add-hook 'groovy-mode-hook (lambda () (setq c-basic-offset 4)))
+;; This caused errors. Now using more general approach in
+;; init-defaults.el
+;(add-hook 'groovy-mode-hook (lambda () (setq c-basic-offset 4)))
 
 
 ;;; generic mode for 1C sources

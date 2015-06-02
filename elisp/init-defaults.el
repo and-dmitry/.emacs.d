@@ -12,8 +12,10 @@
 ;; subword moving
 (global-subword-mode 1)
 
-;; use spaces for indentation
+;; use 4 spaces for indentation
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq-default c-basic-offset 4)
 
 ;; confirm exit
 (setq confirm-kill-emacs 'y-or-n-p)
