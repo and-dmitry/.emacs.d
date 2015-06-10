@@ -39,6 +39,7 @@
          magit
          nose
          projectile
+         pt
          smartscan
          smex
          yaml-mode)))
