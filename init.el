@@ -31,6 +31,7 @@
 ;; install missing
 (let ((packages
        '(ack-and-a-half
+         adoc-mode
          ag
          expand-region
          grep-a-lot
