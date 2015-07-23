@@ -164,3 +164,9 @@
       calendar-month-name-array ["Январь" "Февраль" "Март" "Апрель" "Май"
                                  "Июнь" "Июль" "Август" "Сентябрь"
                                  "Октябрь" "Ноябрь" "Декабрь"])
+
+
+;;; elfeed
+(require 'elfeed-org)
+(elfeed-org)
+(setq rmh-elfeed-org-files (list "~/sync/org/elfeed.org"))

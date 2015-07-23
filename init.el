@@ -33,6 +33,8 @@
        '(ack-and-a-half
          adoc-mode
          ag
+         elfeed
+         elfeed-org
          expand-region
          grep-a-lot
          groovy-mode
