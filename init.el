@@ -58,3 +58,9 @@
 (load "init-modes")
 (load "utils")
 (load "init-keybindings")
+
+
+;; Emacs server
+(require 'server)
+(unless (server-running-p)
+  (server-start))
