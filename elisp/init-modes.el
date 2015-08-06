@@ -170,3 +170,9 @@
 (require 'elfeed-org)
 (elfeed-org)
 (setq rmh-elfeed-org-files (list "~/sync/org/elfeed.org"))
+
+
+;; rst - electric indent messes up everything (emacs 24.4.1)
+(add-hook 'rst-mode-hook
+          (lambda ()
+            (electric-indent-local-mode -1)))
