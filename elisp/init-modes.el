@@ -176,3 +176,13 @@
 (add-hook 'rst-mode-hook
           (lambda ()
             (electric-indent-local-mode -1)))
+
+
+;; web-mode
+
+(require 'web-mode)
+;; extensions
+(add-to-list 'auto-mode-alist '("\\.gsp$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
+;; always use server comments
+(setq web-mode-comment-style 2)

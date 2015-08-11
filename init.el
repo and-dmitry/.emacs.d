@@ -45,6 +45,7 @@
          pt
          smartscan
          smex
+         web-mode
          yaml-mode)))
   (mapc
    (lambda (package)
