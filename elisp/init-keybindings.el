@@ -42,3 +42,6 @@
 
 ;; elfeed
 (global-set-key (kbd "C-c f") 'elfeed)
+
+;; easy-kill
+(global-set-key [remap kill-ring-save] 'easy-kill)

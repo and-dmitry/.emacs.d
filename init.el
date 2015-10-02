@@ -33,6 +33,7 @@
        '(ack-and-a-half
          adoc-mode
          ag
+         easy-kill
          elfeed
          elfeed-org
          expand-region
