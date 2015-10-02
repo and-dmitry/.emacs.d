@@ -20,6 +20,9 @@
 ;; confirm exit
 (setq confirm-kill-emacs 'y-or-n-p)
 
+;; change all prompts to y or n
+(fset 'yes-or-no-p 'y-or-n-p)
+
 
 ;;; backups settings
 (setq
