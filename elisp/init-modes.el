@@ -170,6 +170,7 @@
 (require 'elfeed-org)
 (elfeed-org)
 (setq rmh-elfeed-org-files (list "~/sync/org/elfeed.org"))
+(setq elfeed-db-directory "~/sync/app/elfeed/")
 
 
 ;; rst - electric indent messes up everything (emacs 24.4.1)
