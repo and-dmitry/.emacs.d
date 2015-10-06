@@ -17,45 +17,7 @@
 )
 
 
-;;; packages
-
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
-;; initialize packages to be able to install and configure them
-(setq package-enable-at-startup nil)
-(package-initialize)
-;; get list of packages
-(unless package-archive-contents
-  (package-refresh-contents))
-;; install missing
-(let ((packages
-       '(ack-and-a-half
-         adoc-mode
-         ag
-         easy-kill
-         elfeed
-         elfeed-org
-         expand-region
-         grep-a-lot
-         groovy-mode
-         log4j-mode
-         magit
-         nose
-         projectile
-         pt
-         smartscan
-         smex
-         web-mode
-         yaml-mode)))
-  (mapc
-   (lambda (package)
-     (unless (package-installed-p package)
-       (if (y-or-n-p (format "Package %s is missing. Install it?" package))
-           (package-install package))))
-   packages)
-)
-
+(load "init-packages")
 (load "init-defaults")
 (load "init-modes")
 (load "utils")
