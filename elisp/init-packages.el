@@ -47,6 +47,7 @@
          pt
          smartscan
          smex
+         solarized-theme
          web-mode
          yaml-mode))
 
