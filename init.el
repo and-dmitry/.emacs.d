@@ -8,12 +8,13 @@
 ;; russian input
 (setq default-input-method "russian-computer")
 
+
+;; set code paths
 (let ((personal-dir (locate-user-emacs-file "elisp/")))
   ;; load path for my personal code
   (add-to-list 'load-path personal-dir)
   ;; separate file for Custom
   (setq custom-file (concat personal-dir "custom.el"))
-  (load-file custom-file)
 )
 
 
@@ -22,6 +23,9 @@
 (load "init-modes")
 (load "utils")
 (load "init-keybindings")
+;; Load customizations. It's important that packages have been already
+;; installed and initialized.
+(load-file custom-file)
 
 
 ;; Emacs server
