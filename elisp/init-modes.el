@@ -154,6 +154,9 @@
         ("l" "Log" entry (file+datetree "~/sync/org/log.org")
          "* %?\n  Добавлено %U\n  %i")))
 
+;; auto-fill for org-mode
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
+
 
 ;; calendar
 (add-hook 'calendar-load-hook
