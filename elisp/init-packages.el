@@ -44,7 +44,8 @@
          magit
          nose
          projectile
-         pt
+         ;; Original pt is disabled to test a modified version.
+         ;;pt
          smartscan
          smex
          solarized-theme
