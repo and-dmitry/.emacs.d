@@ -176,10 +176,14 @@
 (setq elfeed-db-directory "~/sync/app/elfeed/")
 
 
+;; rst
+
 ;; rst - electric indent messes up everything (emacs 24.4.1)
 (add-hook 'rst-mode-hook
           (lambda ()
             (electric-indent-local-mode -1)))
+;; enable auto-fill
+(add-hook 'rst-mode-hook 'turn-on-auto-fill)
 
 
 ;; web-mode
