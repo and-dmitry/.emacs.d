@@ -19,9 +19,6 @@
 
 
 (load "init-packages")
-;; custom version of pt.el (testing)
-(require 'pt)
-
 (load "init-defaults")
 (load "init-modes")
 (load "utils")
