@@ -18,6 +18,10 @@
 )
 
 
+;; enable/disable features
+(put 'narrow-to-region 'disabled nil)
+
+
 (load "init-packages")
 (load "init-defaults")
 (load "init-modes")
