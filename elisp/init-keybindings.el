@@ -45,3 +45,6 @@
 
 ;; easy-kill
 (global-set-key [remap kill-ring-save] 'easy-kill)
+
+;; compile
+(global-set-key [f9] #'recompile)
