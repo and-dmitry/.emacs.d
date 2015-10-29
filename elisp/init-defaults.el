@@ -23,6 +23,8 @@
 ;; change all prompts to y or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; kill-ring settings
+(setq kill-do-not-save-duplicates t)
 
 ;;; backups settings
 (setq
