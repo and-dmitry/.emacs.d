@@ -17,3 +17,9 @@
   (interactive "*r")
   (let ((fill-column (point-max)))
     (fill-region beg end)))
+
+(defun xmllint-format-buffer ()
+  "Reformat buffer with xmllint."
+  (interactive)
+  (shell-command-on-region (point-min) (point-max)
+                           "xmllint --format --encode UTF-8 -" nil t))

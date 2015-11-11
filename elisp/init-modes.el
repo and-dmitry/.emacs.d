@@ -194,3 +194,9 @@
 (add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
 ;; always use server comments
 (setq web-mode-comment-style 2)
+
+
+;; nxml-mode, xmllint format
+(add-hook 'nxml-mode-hook
+          '(lambda ()
+             (define-key nxml-mode-map "\C-cm" 'xmllint-format-buffer)))
