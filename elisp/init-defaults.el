@@ -26,6 +26,9 @@
 ;; kill-ring settings
 (setq kill-do-not-save-duplicates t)
 
+;; C-u C-SPC C-SPC ... keeps popping mark
+(setq set-mark-command-repeat-pop t)
+
 ;;; backups settings
 (setq
  backup-by-copying t
