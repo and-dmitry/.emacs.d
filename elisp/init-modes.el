@@ -141,6 +141,8 @@
 (setq org-catch-invisible-edits 'error)
 ;; add timestamp when closing task
 (setq org-log-done 'time)
+;; fontify src blocks
+(setq org-src-fontify-natively t)
 ;; files
 (setq org-agenda-files '("~/sync/org/gtd.org" "~/sync/org/dates.org"))
 (setq org-refile-targets '(("~/sync/org/gtd.org" :level . 1)
