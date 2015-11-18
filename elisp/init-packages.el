@@ -34,6 +34,7 @@
       '(ack-and-a-half
          adoc-mode
          ag
+         beacon
          easy-kill
          elfeed
          elfeed-org

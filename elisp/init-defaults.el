@@ -29,6 +29,9 @@
 ;; C-u C-SPC C-SPC ... keeps popping mark
 (setq set-mark-command-repeat-pop t)
 
+;; cursor visibility
+(beacon-mode 1)
+
 ;;; backups settings
 (setq
  backup-by-copying t
