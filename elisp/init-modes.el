@@ -143,6 +143,8 @@
 (setq org-log-done 'time)
 ;; fontify src blocks
 (setq org-src-fontify-natively t)
+;; use something shorter and better looking than "..."
+(setq org-ellipsis "⤵")
 ;; files
 (setq org-agenda-files '("~/sync/org/gtd.org" "~/sync/org/dates.org"))
 (setq org-refile-targets '(("~/sync/org/gtd.org" :level . 1)
