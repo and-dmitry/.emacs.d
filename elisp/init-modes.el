@@ -1,12 +1,13 @@
 ;;; major modes
 
+;; highlight trailing whitespace in programming modes
+(add-hook 'prog-mode-hook (lambda () (setq show-trailing-whitespace t)))
+
+
 ;;; python
 
 ;; smartscan for python
 (add-hook 'python-mode-hook 'smartscan-mode)
-
-;; highlight trailing whitespace in some modes
-(add-hook 'python-mode-hook (lambda () (setq show-trailing-whitespace t)))
 
 ;; nosetests
 (require 'nose)
@@ -22,9 +23,6 @@
          ("SConscript" . python-mode))
        auto-mode-alist))
 
-
-;; elisp
-(add-hook 'emacs-lisp-mode-hook (lambda () (setq show-trailing-whitespace t)))
 
 ;; yaml
 (require 'yaml-mode)
