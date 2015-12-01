@@ -50,6 +50,7 @@
          smex
          solarized-theme
          web-mode
+         which-key
          yaml-mode))
 
 
