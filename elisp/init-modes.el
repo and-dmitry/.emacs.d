@@ -146,6 +146,14 @@
 (setq org-src-fontify-natively t)
 ;; use something shorter and better looking than "..."
 (setq org-ellipsis "⤵")
+;; open agenda in the current window
+(setq org-agenda-window-setup (quote current-window))
+;; show deadlines in next 7 days
+(setq org-deadline-warning-days 7)
+;; 2 weeks agenda span
+(setq org-agenda-span (quote fortnight))
+;; don't show tasks as scheduled if they are already shown as a deadline
+(setq org-agenda-skip-scheduled-if-deadline-is-shown t)
 ;; files
 (setq org-agenda-files '("~/sync/org/gtd.org" "~/sync/org/dates.org"))
 (setq org-refile-targets '(("~/sync/org/gtd.org" :level . 1)
