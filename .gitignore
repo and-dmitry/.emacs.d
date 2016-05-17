@@ -2,7 +2,11 @@ auto-save-list
 bookmarks
 elpa
 eshell
+ido-last
+ido.last
+places
 projectile-bookmarks.eld
 session.*
+smex-items
 tramp
 url
