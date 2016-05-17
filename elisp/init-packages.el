@@ -43,6 +43,7 @@
          groovy-mode
          log4j-mode
          magit
+         nginx-mode
          nose
          projectile
          pt

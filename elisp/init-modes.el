@@ -90,6 +90,9 @@
 ;; ag
 (setq ag-highlight-search t)
 
+;; nginx mode
+(require 'nginx-mode)
+
 
 ;;; minor modes and global
 
