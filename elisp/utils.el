@@ -23,3 +23,8 @@
   (interactive)
   (shell-command-on-region (point-min) (point-max)
                            "xmllint --format --encode UTF-8 -" nil t))
+
+;; https://www.emacswiki.org/emacs/InsertingTodaysDate
+;; TODO: keybinding?
+(defun insert-current-date () (interactive)
+       (insert (shell-command-to-string "echo -n $(date +%d.%m.%Y)")))
