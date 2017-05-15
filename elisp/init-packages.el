@@ -46,7 +46,7 @@
          nginx-mode
          nose
          projectile
-         pt
+         rg
          smartscan
          smex
          solarized-theme
