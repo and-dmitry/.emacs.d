@@ -31,7 +31,7 @@
 
 ;; These packages should be installed
 (setq my-packages
-      '(ack-and-a-half
+      '(
          adoc-mode
          ag
          beacon
