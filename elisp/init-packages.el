@@ -33,7 +33,6 @@
 (setq my-packages
       '(
          adoc-mode
-         ag
          beacon
          easy-kill
          elfeed
