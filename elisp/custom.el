@@ -16,8 +16,8 @@
  '(package-selected-packages
    (quote
     (yaml-mode which-key web-mode solarized-theme smex smartscan rg projectile nose nginx-mode magit log4j-mode groovy-mode grep-a-lot expand-region elfeed-org elfeed easy-kill beacon adoc-mode)))
+ '(select-enable-clipboard t)
  '(sgml-basic-offset 4)
- '(x-select-enable-clipboard t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
