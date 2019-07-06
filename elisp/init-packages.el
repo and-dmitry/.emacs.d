@@ -39,6 +39,7 @@
          elfeed
          elfeed-org
          expand-region
+         free-keys
          grep-a-lot
          groovy-mode
          log4j-mode
