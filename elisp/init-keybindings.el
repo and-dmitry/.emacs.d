@@ -48,3 +48,7 @@
 
 ;; compile
 (global-set-key [f9] #'recompile)
+
+;; dumb-jump
+(global-set-key (kbd "C-c j") 'dumb-jump-go)
+(global-set-key (kbd "C-c J") 'dumb-jump-back)

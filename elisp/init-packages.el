@@ -35,6 +35,7 @@
       '(
          adoc-mode
          beacon
+         dumb-jump
          easy-kill
          elfeed
          elfeed-org
