@@ -47,6 +47,7 @@
          magit
          nginx-mode
          nose
+         pipenv
          projectile
          rg
          smartscan

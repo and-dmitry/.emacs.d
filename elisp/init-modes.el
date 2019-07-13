@@ -23,6 +23,9 @@
          ("SConscript" . python-mode))
        auto-mode-alist))
 
+;; pipenv
+(add-hook 'python-mode-hook 'pipenv-mode)
+
 
 ;; yaml
 (require 'yaml-mode)
