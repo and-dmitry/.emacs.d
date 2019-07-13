@@ -40,6 +40,7 @@
          elfeed
          elfeed-org
          expand-region
+         flycheck
          free-keys
          grep-a-lot
          groovy-mode

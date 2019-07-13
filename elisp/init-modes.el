@@ -221,3 +221,9 @@
 (add-hook 'nxml-mode-hook
           '(lambda ()
              (define-key nxml-mode-map "\C-cm" 'xmllint-format-buffer)))
+
+
+;; flycheck
+(setq flycheck-check-syntax-automatically (quote (save)))
+(setq flycheck-flake8rc ".flake8")
+(add-hook 'after-init-hook #'global-flycheck-mode)
