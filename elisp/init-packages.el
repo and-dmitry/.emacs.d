@@ -50,6 +50,7 @@
          nose
          pipenv
          projectile
+         pytest
          rg
          smartscan
          smex
