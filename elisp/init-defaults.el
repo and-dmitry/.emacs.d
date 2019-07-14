@@ -41,3 +41,11 @@
  kept-new-versions 6
  kept-old-versions 2
  version-control t)
+
+;; store more minibuffer history
+(setq history-length 1000)
+
+;; use system clipboard
+(setq select-enable-clipboard t)
+
+(setq visible-bell t)

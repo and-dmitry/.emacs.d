@@ -8,6 +8,11 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-startup-screen t)
+;; This is the right way to start emacs maximized. Using
+;; default-frame-alist breaks ediff. Of course, there's also a command
+;; line option (-mm), but I want it to be part of my .emacs.d.
+(setq initial-frame-alist '((fullscreen . maximized)))
+
 
 ;; russian input
 (setq default-input-method "russian-computer")

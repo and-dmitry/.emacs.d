@@ -227,3 +227,9 @@
 (setq flycheck-check-syntax-automatically (quote (save)))
 (setq flycheck-flake8rc ".flake8")
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+
+;; html-mode
+(add-hook 'html-mode-hook
+          (lambda ()
+            (set (make-local-variable 'sgml-basic-offset) 4)))
