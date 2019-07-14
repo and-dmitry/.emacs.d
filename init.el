@@ -1,13 +1,12 @@
-;; Disable mouse interface. Doing it early to avoid redrawing later.
-
 ;; Next line is added by Package.el. Commented out because we're
 ;; doing it later.
 ;(package-initialize)
 
+
+;;; Configuring GUI. Doing it early to avoid redrawing later.
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
-
 (setq inhibit-startup-screen t)
 
 ;; russian input
