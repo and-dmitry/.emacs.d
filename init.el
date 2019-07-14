@@ -22,9 +22,8 @@
 (let ((personal-dir (locate-user-emacs-file "elisp/")))
   ;; load path for my personal code
   (add-to-list 'load-path personal-dir)
-  ;; separate file for Custom
-  (setq custom-file (concat personal-dir "custom.el"))
 )
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 
 ;; enable/disable features
@@ -38,7 +37,7 @@
 (load "init-keybindings")
 ;; Load customizations. It's important that packages have been already
 ;; installed and initialized.
-(load-file custom-file)
+(load custom-file 'noerror)
 
 
 ;; Emacs server

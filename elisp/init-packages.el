@@ -30,7 +30,7 @@
 
 
 ;; These packages should be installed
-;; TODO: Use package-selected-packages?
+;; TODO: switch to use-package?
 (setq my-packages
       '(
          adoc-mode
