@@ -51,6 +51,7 @@
          pipenv
          projectile
          pytest
+         pyvenv
          rg
          smartscan
          smex
