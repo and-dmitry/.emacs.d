@@ -233,3 +233,7 @@
 (add-hook 'html-mode-hook
           (lambda ()
             (set (make-local-variable 'sgml-basic-offset) 4)))
+
+
+;; dumb-jump
+(setq dumb-jump-prefer-searcher 'rg)
