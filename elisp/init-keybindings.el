@@ -51,4 +51,5 @@
 
 ;; dumb-jump
 (global-set-key (kbd "C-c j") 'dumb-jump-go)
-(global-set-key (kbd "C-c J") 'dumb-jump-back)
+(global-set-key (kbd "C-c b") 'dumb-jump-back)
+(global-set-key (kbd "C-c o") 'dumb-jump-go-other-window)
