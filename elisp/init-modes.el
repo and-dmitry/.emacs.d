@@ -160,6 +160,7 @@
 (setq org-agenda-window-setup (quote current-window))
 ;; show deadlines in next 7 days
 (setq org-deadline-warning-days 7)
+(setq org-agenda-skip-deadline-prewarning-if-scheduled (quote pre-scheduled))
 ;; 2 weeks agenda span
 (setq org-agenda-span (quote fortnight))
 ;; don't show tasks as scheduled if they are already shown as a deadline
