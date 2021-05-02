@@ -179,6 +179,7 @@
 
 ;; dumb-jump
 (setq dumb-jump-prefer-searcher 'rg)
+(add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
 
 
 ;; smartscan
