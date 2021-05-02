@@ -42,12 +42,10 @@
          expand-region
          flycheck
          free-keys
-         grep-a-lot
          groovy-mode
          log4j-mode
          magit
          nginx-mode
-         nose
          pipenv
          projectile
          pytest

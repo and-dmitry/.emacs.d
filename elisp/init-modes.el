@@ -9,13 +9,6 @@
 ;; smartscan for python
 (add-hook 'python-mode-hook 'smartscan-mode)
 
-;; nosetests
-(require 'nose)
-(add-hook 'python-mode-hook (lambda () (nose-mode t)))
-(setq nose-global-name "nosetests")
-(add-hook 'python-mode-hook
-          '(lambda () (define-key python-mode-map "\C-ct" 'nosetests-again)))
-
 ;; scons files
 (setq auto-mode-alist
       (append
@@ -47,51 +40,6 @@
 ;; use minimal arguments identation to reduce line length
 (add-hook 'java-mode-hook (lambda () (c-set-offset 'arglist-intro '+)))
 
-
-;;; groovy
-
-;; This caused errors. Now using more general approach in
-;; init-defaults.el
-;(add-hook 'groovy-mode-hook (lambda () (setq c-basic-offset 4)))
-
-
-;;; generic mode for 1C sources
-
-(require 'generic-x)
-
-(define-generic-mode
-    '1c-mode  ;; mode name
-  '("//")  ;; comments
-
-  '("if" "если" "then" "тогда" "elsif" "иначеесли" "else" "иначе" "endif"
-    "конецесли" "do" "цикл" "for" "для" "to" "по" "each" "каждого" "in" "из"
-    "while" "пока" "enddo" "конеццикла" "procedure" "процедура" "endprocedure"
-    "конецпроцедуры" "function" "функция" "endfunction" "конецфункции" "var"
-    "перем" "export" "экспорт" "goto" "перейти" "and" "и" "or" "или" "not" "не"
-    "val" "знач" "break" "прервать" "continue" "продолжить" "return" "возврат"
-    "try" "попытка" "except" "исключение" "endtry" "конецпопытки" "raise"
-    "вызватьисключение" "false" "ложь" "true" "истина" "undefined"
-    "неопределено" "null" "new" "новый" "execute" "выполнить"
-
-    "If" "Если" "Then" "Тогда" "Elsif" "ИначеЕсли" "Else" "Иначе" "Endif"
-    "КонецЕсли" "Do" "Цикл" "For" "Для" "To" "По" "Each" "Каждого" "In" "Из"
-    "While" "Пока" "Enddo" "КонецЦикла" "Procedure" "Процедура" "Endprocedure"
-    "КонецПроцедуры" "Function" "Функция" "Endfunction" "КонецФункции" "Var"
-    "Перем" "Export" "Экспорт" "Goto" "Перейти" "And" "И" "Or" "Или"
-    "Not " "Не " "Val" "Знач" "Break" "Прервать" "Continue" "Продолжить"
-    "Return" "Возврат" "Try" "Попытка" "Except" "Исключение" "Endtry"
-    "КонецПопытки" "Raise" "ВызватьИсключение" "False" "Ложь" "True" "Истина"
-    "Undefined" "Неопределено" "Null" "New" "Новый" "Execute" "Выполнить")
-  '(("=" . 'font-lock-operator)
-    (";" . 'font-lock-builtin))
-  nil  ;; no extensions
-  nil
-  "Generic mode for 1C"
-  )
-
-
-;; ag
-(setq ag-highlight-search t)
 
 ;; nginx mode
 (require 'nginx-mode)
@@ -130,10 +78,6 @@
 
 ;; projectile
 (projectile-global-mode)
-
-;; grep-a-lot
-(require 'grep-a-lot)
-(grep-a-lot-setup-keys)
 
 ;; which-key
 (which-key-mode)
