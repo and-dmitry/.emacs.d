@@ -6,6 +6,9 @@
 
 ;;; python
 
+;; smartscan for python
+(add-hook 'python-mode-hook 'smartscan-mode)
+
 ;; scons files
 (setq auto-mode-alist
       (append
@@ -23,6 +26,9 @@
 
 
 ;;; ruby
+
+;; smartscan
+(add-hook 'ruby-mode-hook 'smartscan-mode)
 
 ;; ruby on rails files
 (add-to-list 'auto-mode-alist '("\\.jbuilder$" . ruby-mode))
@@ -183,5 +189,4 @@
 
 
 ;; smartscan
-(global-smartscan-mode 1)
 (setq smartscan-symbol-selector "symbol")
