@@ -150,6 +150,7 @@
 (setq org-catch-invisible-edits 'error)
 ;; add timestamp when closing task
 (setq org-log-done 'time)
+(setq org-log-into-drawer "LOGBOOK")
 ;; fontify src blocks
 (setq org-src-fontify-natively t)
 ;; use something shorter and better looking than "..."
