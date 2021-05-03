@@ -54,6 +54,7 @@
          smartscan
          smex
          solarized-theme
+         symbol-overlay
          web-mode
          which-key
          yaml-mode))

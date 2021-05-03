@@ -8,6 +8,8 @@
 
 ;; smartscan for python
 (add-hook 'python-mode-hook 'smartscan-mode)
+;; symbol-overlay for python
+(add-hook 'python-mode-hook 'symbol-overlay-mode)
 
 ;; scons files
 (setq auto-mode-alist

@@ -48,3 +48,8 @@
 
 ;; compile
 (global-set-key [f9] #'recompile)
+
+;; symbol-overlay
+(require 'symbol-overlay)
+(global-set-key (kbd "M-i") 'symbol-overlay-put)
+(global-set-key (kbd "M-I") 'symbol-overlay-remove-all)
