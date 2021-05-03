@@ -192,3 +192,8 @@
 
 ;; smartscan
 (setq smartscan-symbol-selector "symbol")
+
+
+;; rg
+(rg-enable-default-bindings)
+(setq rg-ignore-case nil)
