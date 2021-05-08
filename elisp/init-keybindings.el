@@ -53,3 +53,6 @@
 (require 'symbol-overlay)
 (global-set-key (kbd "M-i") 'symbol-overlay-put)
 (global-set-key (kbd "M-I") 'symbol-overlay-remove-all)
+
+;; recentf
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)

@@ -197,3 +197,9 @@
 ;; rg
 (rg-enable-default-bindings)
 (setq rg-ignore-case nil)
+
+
+;; recentf
+(require 'recentf)
+(recentf-mode t)
+(setq recentf-max-saved-items 20)
