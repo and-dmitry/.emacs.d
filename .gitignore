@@ -3,8 +3,7 @@ bookmarks
 custom.el
 elpa
 eshell
-ido-last
-ido.last
+*ido?last*
 places
 projectile-bookmarks.eld
 session.*
