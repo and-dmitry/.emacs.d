@@ -1,7 +1,7 @@
 ;;; global defaults
 
 ;; show line numbers
-(global-linum-mode 1)
+(global-display-line-numbers-mode)
 
 ;; show column number
 (column-number-mode 1)
