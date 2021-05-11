@@ -60,6 +60,7 @@
 (put 'dired-find-alternate-file 'disabled nil)
 ;; enable Dired Extra
 (require 'dired-x)
+(setq dired-isearch-filenames 'dwim)
 
 ;; ibuffer sorting
 (setq ibuffer-default-sorting-mode 'major-mode)
