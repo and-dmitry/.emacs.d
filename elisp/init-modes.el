@@ -116,7 +116,8 @@
 ;; files
 (setq org-agenda-files '("~/sync/org/gtd.org" "~/sync/org/dates.org"))
 (setq org-refile-targets '(("~/sync/org/gtd.org" :level . 1)
-                           ("~/sync/org/someday.org" :level . 1)))
+                           ("~/sync/org/someday.org" :level . 1)
+                           (nil :maxlevel . 2)))
 ;; configure capturing
 (setq org-directory "~/sync/org")
 (setq org-default-notes-file "~/sync/org/log.org")
