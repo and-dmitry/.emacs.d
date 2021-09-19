@@ -49,3 +49,6 @@
 (setq select-enable-clipboard t)
 
 (setq visible-bell t)
+
+;; auto parentheses and quotes
+(electric-pair-mode 1)
