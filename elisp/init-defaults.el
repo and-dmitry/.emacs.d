@@ -52,3 +52,7 @@
 
 ;; auto parentheses and quotes
 (electric-pair-mode 1)
+
+;; global-auto-revert
+(global-auto-revert-mode)
+(setq global-auto-revert-non-file-buffers t)
