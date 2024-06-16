@@ -98,12 +98,13 @@
 ;; add timestamp when closing task
 (setq org-log-done 'time)
 (setq org-log-into-drawer "LOGBOOK")
+(setq org-treat-insert-todo-heading-as-state-change t)
 ;; fontify src blocks
 (setq org-src-fontify-natively t)
 ;; use something shorter and better looking than "..."
 (setq org-ellipsis "⤵")
 ;; task keywords
-(setq org-todo-keywords '((sequence "TODO" "|" "DONE" "CANCELLED")))
+(setq org-todo-keywords '((sequence "TODO(t!)" "|" "DONE(d!)" "CANCELLED(c!)")))
 ;; open agenda in the current window
 (setq org-agenda-window-setup (quote current-window))
 ;; show deadlines in next 7 days
