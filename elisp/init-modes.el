@@ -124,9 +124,9 @@
 (setq org-default-notes-file "~/sync/org/log.org")
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/sync/org/gtd.org" "Входящие")
-         "* TODO %?\n  %i")
+         "* TODO %?\n  CREATED %U\n  %i")
         ("l" "Log" entry (file+datetree "~/sync/org/log.org")
-         "* %?\n  Добавлено %U\n  %i")))
+         "* %?\n  CREATED %U\n  %i")))
 
 ;; auto-fill for org-mode
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
