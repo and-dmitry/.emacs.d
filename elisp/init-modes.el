@@ -123,7 +123,7 @@
 (setq org-directory "~/sync/org")
 (setq org-default-notes-file "~/sync/org/log.org")
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/sync/org/gtd.org" "Задачи")
+      '(("t" "Todo" entry (file+headline "~/sync/org/gtd.org" "Входящие")
          "* TODO %?\n  %i")
         ("l" "Log" entry (file+datetree "~/sync/org/log.org")
          "* %?\n  Добавлено %U\n  %i")))
