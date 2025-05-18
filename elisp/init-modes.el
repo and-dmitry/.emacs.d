@@ -115,17 +115,16 @@
 ;; don't show tasks as scheduled if they are already shown as a deadline
 (setq org-agenda-skip-scheduled-if-deadline-is-shown t)
 ;; files
-(setq org-agenda-files '("~/sync/org/gtd.org" "~/sync/org/dates.org"))
-(setq org-refile-targets '(("~/sync/org/gtd.org" :level . 1)
-                           ("~/sync/org/someday.org" :level . 1)
-                           (nil :maxlevel . 2)))
+(setq org-agenda-files (mapcar #'substitute-in-file-name
+                               '("$ORG_DIR/gtd.org" "$ORG_DIR/dates.org")))
+(setq org-refile-targets '((nil :maxlevel . 2)))
 ;; configure capturing
-(setq org-directory "~/sync/org")
-(setq org-default-notes-file "~/sync/org/log.org")
+(setq org-directory (substitute-in-file-name "$ORG_DIR"))
+(setq org-default-notes-file "log.org")
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/sync/org/gtd.org" "Входящие")
+      '(("t" "Todo" entry (file+headline "gtd.org" "Входящие")
          "* TODO %?\n  CREATED: %U\n  %i")
-        ("l" "Log" entry (file+datetree "~/sync/org/log.org")
+        ("l" "Log" entry (file+datetree "log.org")
          "* %?\n  CREATED: %U\n  %i")))
 
 ;; auto-fill for org-mode
@@ -146,8 +145,8 @@
 ;;; elfeed
 (require 'elfeed-org)
 (elfeed-org)
-(setq rmh-elfeed-org-files (list "~/sync/org/elfeed.org"))
-(setq elfeed-db-directory "~/sync/app/elfeed/")
+(setq rmh-elfeed-org-files (list (substitute-in-file-name "$ORG_DIR/elfeed.org")))
+(setq elfeed-db-directory "~/.elfeed/")
 
 
 ;; rst
