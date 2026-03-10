@@ -56,3 +56,5 @@
 ;; global-auto-revert
 (global-auto-revert-mode)
 (setq global-auto-revert-non-file-buffers t)
+
+(global-display-fill-column-indicator-mode)
