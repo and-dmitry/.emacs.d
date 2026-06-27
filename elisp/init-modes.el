@@ -204,4 +204,4 @@
 ;; recentf
 (require 'recentf)
 (recentf-mode t)
-(setq recentf-max-saved-items 20)
+(setq recentf-max-saved-items 50)
