@@ -55,4 +55,4 @@
 (global-set-key (kbd "M-I") 'symbol-overlay-remove-all)
 
 ;; recentf
-(global-set-key (kbd "C-x C-r") 'recentf-open-files)
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)

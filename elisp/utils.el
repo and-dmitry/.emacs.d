@@ -28,3 +28,12 @@
 ;; TODO: keybinding?
 (defun insert-current-date () (interactive)
        (insert (shell-command-to-string "echo -n $(date +%d.%m.%Y)")))
+
+
+;; Based on https://www.masteringemacs.org/article/find-files-faster-recent-files-package
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to visit a recent file."
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+    (message "Aborting")))
