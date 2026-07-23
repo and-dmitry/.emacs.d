@@ -43,6 +43,7 @@
          flycheck
          free-keys
          groovy-mode
+         json-mode
          log4j-mode
          magit
          nginx-mode
